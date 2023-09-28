@@ -2,8 +2,16 @@ html {
   height: 100%;
 }
 
+:root {
+  --bg: #f8f5f1;
+  --primary: #164ea2;
+  --secondary: #dec5a6;
+  --accent:#a78052;
+  --text: #110d08;
+}
+
 body {
-  background-color: white;
+  background-color: var(--bg);
   position: relative;
   min-height: 100vh;
   padding: 0;
@@ -33,9 +41,11 @@ main {
   align-items: center;
   text-align: center;
 
-  background-color: black;
-  color: white;
+  background-color: var(--accent);
+  color: var(--text);
   padding: 0px 0px;
+
+  border-bottom: 2px solid black;
 
   /* Debug border */
   /* border: solid red; */
@@ -47,10 +57,12 @@ main {
   position: relative;
   right: 30px;
   list-style: none;
+  font-family: "Poppins";
+  color: var(--text);
 }
 
 .navbar a {
-  color: white;
+  color: var(--text);
   font-weight: bold;
   margin: 0 12px;
   text-decoration: none;

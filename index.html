@@ -1,24 +1,33 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> Nathan Luong's Website </title>
+        <title> My Portfolio </title>
         <link rel = "stylesheet" href = "styles.min.css">
+        <link rel = "stylesheet" href = "mediaqueries.css">
         <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     </head>
     <body>
         <nav class = "navbar">
             <h1 class = "logo"> 
-                <a href = "index.html"> Nathan Luong </a>
+                Nathan Luong
             </h1>
             <ul class = "nav-list">
-                <li><a href = "index.html"> Home </a></li>
-                <li><a href = "blog.html"> Blog </a></li>
-                <li><a href = "portfolio.html"> Portfolio </a></li>
-                <li><a href = "resume.html"> Resume </a></li>
-                <li><a href = "contact.html"> Contact </a></li>
+                <li><a href = index.html> About </a></li>
+                <li><a href = resume.html> Experience </a></li>
+                <li><a href = portfolio.html> Projects </a></li>
+                <li><a href = contact.html> Contact </a></li>
             </ul>
         </nav>
-        <main>
+        <!-- <nav id = "hamburger-nav"> 
+            <div class = "logo"> Nathan Luong </div>
+            <div class = "hamburger-menu">
+                <div class = "hamburger-icon" onclick = "toggleMenu()"> </div>
+            </div>
+        </nav> -->
+        
+        
+        
+        <!-- <main>
             <h1 class = "page-title"> Nathan's Website </h1>
             <div class = "about">
                 <div class = "about-image"> 
@@ -30,9 +39,33 @@
                 </div>
             </div>
 
-        </main>
+        </main> -->
+
+        <section id = "profile">
+            <div class = "section-container">
+                <div class = "section-pic-container">
+                    <img src = "./assets/profile-pic.JPG" alt = "Nathan Luong profile picture">
+                </div>
+                <div class = "section_text"> 
+                    <p class = "section_text_p1"> Nice to meet you, I'm </p>
+                    <h1 class = "title"> Nathan Luong </h1>
+                    <p class = "section_text_p2"> Software Engineer </p>
+                    <div class = "btn-container">
+                        <button class = "btn btn-color-2" onclick = "window.open('./assets/resume.pdf')"> Download Resume </button>
+                        <button class = "btn btn-color-2" onclick = "location.href = 'contact.html'"> Contact Info </button>
+                    </div>
+                    <div id = "socials-container">
+                        <img src = "./assets/linkedin.png" alt = "My LinkedIn Profile" class = "icon" onclick = "location.href = 'https://www.linkedin.com/in/nathan-luong-477a46225/'">
+                        <img src = "./assets/github.png" alt = "My GitHub Profile" class = "icon" onclick = "location.href = 'https://github.com/nluong9600'">
+                    </div>
+                </div>
+                
+                
+            </div>
+        </section>
+
         <footer class = "footer">
-            © 2023 <Personal Website Name> | All Rights Reserved
+            © 2023 <Personal Website Name> | All Rights Reserved | Built With Yerba
         </footer>
     </body>
 </html>
